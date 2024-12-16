@@ -1,12 +1,12 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { getTest } from "../api/testApi";
 
 const Home = () => {
   // test
   const [tests, setTests] = useState([]);
 
   useEffect(() => {
-    axios.get("http://54.180.226.95:8080/api/test/list").then((res) => {
+    getTest().then((res) => {
       console.log(res);
       setTests(res.data);
     });
