@@ -6,7 +6,7 @@ const Home = () => {
   const [tests, setTests] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/api/test/list").then((res) => {
+    axios.get("http://54.180.226.95:8080/api/test/list").then((res) => {
       console.log(res);
       setTests(res.data);
     });
