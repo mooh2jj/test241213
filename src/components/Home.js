@@ -14,6 +14,9 @@ const Home = () => {
 
   return (
     <div>
+      <h1>dsg 월드에 오신 걸 환영합니다!</h1>
+      <h2>오늘도 즐거운 하루 되세요!</h2>
+      <br />
       <ul style={{ listStyle: "none" }}>
         {tests.map((item) => (
           <li key={item.id}>{item.title}</li>
